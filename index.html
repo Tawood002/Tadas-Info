@@ -1,6 +1,358 @@
-Tadas Info
-│
-├── index.html
-├── style.css
-├── script.js
-└── images/
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EDIT THIS: Browser tab title -->
+    <title>Tadas' Page</title>
+
+    <style>
+        /* ================================
+           BASIC PAGE SETTINGS
+           ================================ */
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #111111;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+
+        /* ================================
+           MAIN TITLE
+           ================================ */
+
+        h1 {
+            font-size: 42px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+
+        /* ================================
+           BIRTHDAY SECTION
+           ================================ */
+
+        .birthday {
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #1d1d1d;
+            border-radius: 15px;
+            overflow-x: auto;
+        }
+
+        .birthday-number {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .birthday-emojis {
+            font-size: 45px;
+            margin: 10px;
+        }
+
+
+        /* ================================
+           ASCII ART
+           ================================ */
+
+        pre {
+            display: inline-block;
+            text-align: left;
+            font-family: monospace;
+            font-size: 8px;
+            line-height: 8px;
+            white-space: pre;
+            color: #ffffff;
+            margin: 10px auto;
+        }
+
+
+        /* ================================
+           INFORMATION BOXES
+           ================================ */
+
+        .section {
+            background-color: #1d1d1d;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .section p {
+            color: #dddddd;
+            line-height: 1.6;
+        }
+
+
+        /* ================================
+           LINKS / BUTTONS
+           ================================ */
+
+        .button {
+            display: block;
+            max-width: 400px;
+            margin: 12px auto;
+            padding: 14px;
+            background-color: #333333;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background-color: #555555;
+        }
+
+
+        /* ================================
+           FOOTER
+           ================================ */
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #888888;
+            font-size: 14px;
+        }
+
+
+        /* ================================
+           PHONE SCREEN
+           ================================ */
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .birthday-number {
+                font-size: 45px;
+            }
+
+            .birthday-emojis {
+                font-size: 35px;
+            }
+
+            pre {
+                font-size: 4px;
+                line-height: 4px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- ==========================================
+         MAIN TITLE
+         EDIT THE TEXT BETWEEN THE <h1> TAGS
+         ========================================== -->
+
+    <h1>Hey, I'm Tadas 👋</h1>
+
+    <!-- EDIT THIS TEXT -->
+    <div class="subtitle">
+        Welcome to my little corner of the internet.
+    </div>
+
+
+    <!-- ==========================================
+         BIRTHDAY
+         ========================================== -->
+
+    <div class="birthday">
+
+        <div class="birthday-emojis">
+            🎈 🎈 🎈
+        </div>
+
+        <!-- EDIT THE AGE HERE -->
+        <div class="birthday-number">
+            21
+        </div>
+
+        <div class="birthday-emojis">
+            🎂 🕯️ 🕯️ 🕯️
+        </div>
+
+        <!-- EDIT THIS TEXT -->
+        <h2>Happy Birthday to Me! 🎉</h2>
+
+    </div>
+
+
+    <!-- ==========================================
+         ASCII ART
+         ========================================== -->
+
+    <div class="section">
+
+        <pre>
+⠀⠀⠀⢸⣦⡀⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣏⠻⣶⣤⡶⢾⡿⠁⠀⢠⣄⡀⢀⣴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣀⣼⠷⠀⠀⠁⢀⣿⠃⠀⠀⢀⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠴⣾⣯⣅⣀⠀⠀⠀⠈⢻⣦⡀⠒⠻⠿⣿⡿⠿⠓⠂⠀⠀⢀⡇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠉⢻⡇⣤⣾⣿⣷⣿⣿⣤⠀⠀⣿⠁⠀⠀⠀⢀⣴⣿⣿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠸⣿⡿⠏⠀⢀⠀⠀⠿⣶⣤⣤⣤⣄⣀⣴⣿⡿⢻⣿⡆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠟⠁⠀⢀⣼⠀⠀⠀⠹⣿⣟⠿⠿⠿⡿⠋⠀⠘⣿⣇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢳⣶⣶⣿⣿⣇⣀⠀⠀⠙⣿⣆⠀⠀⠀⠀⠀⠀⠛⠿⣿⣦⣤⣀⠀⠀
+⠀⠀⠀⠀⠀⠀⣹⣿⣿⣿⣿⠿⠋⠁⠀⣹⣿⠳⠀⠀⠀⠀⠀⠀⢀⣠⽽⣿⡿⠟⠃
+⠀⠀⠀⠀⠀⢰⠿⠛⠻⢿⡇⠀⠀⠀⣰⣿⠏⠀⠀⢀⠀⠀⠀⣾⣿⠟⠋⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠋⠀⠀⣰⣿⣿⣾⣿⠿⢿⣷⣀⢀⣿⡇⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠋⠉⠁⠀⠀⠀⠀⠙⢿⣿⣿⠇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⡶⢤⡀⠀⠀⠀⢀⡇⡄⠈⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢠⡇⡄⢙⢦⣀⣀⣼⠁⠂⠀⠀⠙⢦⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠘⡇⡇⠀⠁⡍⠁⠀⠀⠈⠁⠂⠀⢈⠳⡄⠀⠀⠀⠀⠀⠀
+⠀⠰⡇⢀⠀⡐⠁⠀⠀⠀⠀⠀⢀⡴⣋⡄⠹⣆⠀⠀⠀⠀⠀
+⠀⠀⣗⠈⢅⣀⣀⣀⡀⠀⠀⠀⠛⠛⠤⠤⠤⡸⣆⣠⠟⢲⡄
+⠀⠀⣿⠀⠰⠒⣺⠟⠁⢀⣠⠤⠶⡄⡁⠀⢀⠆⢹⠁⣠⠞⠁
+⠀⠀⢻⡀⢀⠞⠑⠒⢄⢣⡀⠀⠀⡇⠈⠉⠀⣠⣾⡜⠃⠀⠀
+⢀⣤⣼⣇⠈⠠⠤⠄⠊⠀⠑⠤⢠⣃⣠⠴⢛⡿⠋⠀⠀⠀⠀
+⠸⢤⣄⣈⡓⡦⠤⠤⠤⠴⠖⠚⠋⠉⠀⢸⡍⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠉⠉⠛⠛⠒⢷⠀⠀⠀⠀⠀⠀⢷⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢘⡃⠀⠀⠀⠀⠀⠘⡃⠀⠀⠀⠀⠀
+        </pre>
+
+    </div>
+
+
+    <!-- ==========================================
+         ABOUT ME
+         ========================================== -->
+
+    <div class="section">
+
+        <h2>About Me</h2>
+
+        <!-- EDIT THIS TEXT -->
+        <p>
+            Hey! I'm Tadas. Welcome to my website!
+        </p>
+
+        <!-- ADD MORE TEXT HERE IF YOU WANT -->
+        <p>
+            This is just a little page for my friends and family
+            to find out what I'm up to.
+        </p>
+
+    </div>
+
+
+    <!-- ==========================================
+         SOME RANDOM INFO
+         ========================================== -->
+
+    <div class="section">
+
+        <h2>A Few Things About Me</h2>
+
+        <!-- EDIT THESE -->
+        <p>🎮 I like gaming</p>
+        <p>🏍️ I ride a motorcycle</p>
+        <p>💻 I enjoy technology</p>
+        <p>🐶 I like dogs</p>
+
+    </div>
+
+
+    <!-- ==========================================
+         MY LINKS
+         ========================================== -->
+
+    <div class="section">
+
+        <h2>Find Me</h2>
+
+        <!--
+        EDIT THE URL inside href=""
+        AND EDIT THE TEXT between > <
+        -->
+
+        <a class="button"
+           href="https://github.com/Tawood002"
+           target="_blank">
+            💻 My GitHub
+        </a>
+
+        <!-- ADD YOUR LINKEDIN -->
+        <a class="button"
+           href="#"
+           target="_blank">
+            💼 LinkedIn
+        </a>
+
+        <!-- ADD YOUR INSTAGRAM -->
+        <a class="button"
+           href="#"
+           target="_blank">
+            📸 Instagram
+        </a>
+
+    </div>
+
+
+    <!-- ==========================================
+         CONTACT
+         ========================================== -->
+
+    <div class="section">
+
+        <h2>Contact Me</h2>
+
+        <!-- EDIT THIS EMAIL -->
+        <a class="button"
+           href="mailto:YOUR-EMAIL@example.com">
+            ✉️ Email Me
+        </a>
+
+    </div>
+
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+
+    <footer>
+
+        <!-- EDIT THIS -->
+        Made with ❤️ by Tadas
+
+    </footer>
+
+
+</div>
+
+</body>
+</html>
+```
